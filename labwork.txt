@@ -1,0 +1,24 @@
+tokenization 
+cosine similarity
+term frequency
+
+inverted indexing and stopword removal
+
+stemming 
+
+sequential crawling 
+
+
+Q1:4/8
+Q2:1/9
+Q3:6/10
+Q4: 27/10
+
+
+Internal Assessment : 20/9
+
+Term End : 1/11
+
+create a graph 
+
+all centrality and prestige measure
