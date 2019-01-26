@@ -3,7 +3,7 @@ from string_library import tokenise,cos_sim,con_cat_list,text_to_vector,Jaccard,
 from json_work_library import store_list,retreive_list
 
 ##Definations: Starting urls , file locations##
-start_url=['https://en.wikipedia.org/wiki/Huguenot-Walloon_half_dollar','https://en.wikipedia.org/wiki/Silver','https://en.wikipedia.org/wiki/Gold']
+start_url=['https://en.wikipedia.org/wiki/Huguenot-Walloon_half_dollar','https://en.wikipedia.org/wiki/Gold']
 file_location='doc_result.json'
 
 ##start our crawler: the crawler will parrallise if more than starting url is found##

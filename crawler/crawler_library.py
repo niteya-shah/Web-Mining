@@ -21,7 +21,9 @@ def crawl(url,visited,datastore,goto,max_num_requests_per_page=10):
                 goto+=[url]
                 counter+=1
     for text in soup.findAll('p'):
-        temp_datastore.append(text.findAll(text=True)[0])
+        w=text.findAll(text=True)
+        if(len(w)>0):
+            temp_datastore.append(w)
     datastore.append(temp_datastore)
     return
 """
@@ -61,7 +63,7 @@ Index function that is called by the file , decides if multi core or single core
 """
 def crawler(url_list):
     if(len(url_list)==1):
-        data,weblist=spider(url_list,50)
+        data,weblist=spider(url_list[0],50)
     else:
         data,weblist=par_spider(url_list)
     return data,weblist
